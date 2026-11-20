@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSW Bus Live Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>NSW Bus Live Board</h1>
+
+    <div class="search-box">
+      <label for="stopInput">Bus Stop</label>
+      <input type="text" id="stopInput" placeholder="Type a stop name (e.g. Forman Ave)..." autocomplete="off">
+      <div id="autocompleteResults" class="dropdown"></div>
+    </div>
+
+    <button id="loadBusesBtn" disabled>Load Departures (next 20 mins)</button>
+
+    <div class="results-section">
+      <div class="column">
+        <h2>Upcoming Buses</h2>
+        <div id="upcomingBuses" class="bus-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
